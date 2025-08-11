@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { ArrowLeft, Footprints, Venus } from "lucide-react";
 import { notFound } from "next/navigation";
-import { getPlayerById, players, lastTournament, getResultByTeamId, teams } from "@/data";
+import { getPlayerById } from "@/data";
 import RadarChart from "@/components/RadarChart";
 
 export default function PlayerProfile({ params }: { params: Promise<{ id: string }> }) {
@@ -13,16 +13,6 @@ export default function PlayerProfile({ params }: { params: Promise<{ id: string
     notFound();
   }
 
-  // Find player's team and tournament result
-  const playerTeam = teams.find(team => 
-    team.player1Id === player.id || team.player2Id === player.id
-  );
-  const teamResult = playerTeam ? getResultByTeamId(playerTeam.id) : null;
-
-  // Mock past tournament data
-  const pastTournaments = [
-
-  ];
 
   // Use radar chart stats from player data
   const radarStats = player.radarStats;
@@ -60,7 +50,7 @@ export default function PlayerProfile({ params }: { params: Promise<{ id: string
             <div className="flex flex-col md:flex-row items-center md:items-start gap-4 md:gap-8">
               <div className="text-center md:text-left">
                 <p className="text-lg md:text-xl opacity-90 mb-2">
-                  Alias: "{player.alias || 'N/A'}"
+                  Alias: &ldquo;{player.alias || 'N/A'}&rdquo;
                 </p>
                 <p className="text-base md:text-lg opacity-80">
                   Current Handicap: <span className="font-bold text-green-300">{player.handicap}</span>

@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { Calendar, Users, Trophy } from "lucide-react";
 
 export default function NextTournament() {

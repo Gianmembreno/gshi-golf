@@ -2,8 +2,15 @@
 
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
-import { getPlayerById, teams, getTeamById } from "@/data";
+import { getPlayerById, teams } from "@/data";
 import { use } from "react";
+
+interface Hole {
+  hole: number;
+  par: number;
+  score: number;
+  scoreToPar: number;
+}
 
 interface ScorecardPageProps {
   params: Promise<{
@@ -79,10 +86,10 @@ export default function ScorecardPage({ params }: ScorecardPageProps) {
   const frontNine = scorecard.holes.slice(0, 9);
   const backNine = scorecard.holes.slice(9, 18);
   
-  const frontNineScore = frontNine.reduce((sum: number, hole: any) => sum + hole.score, 0);
-  const backNineScore = backNine.reduce((sum: number, hole: any) => sum + hole.score, 0);
-  const frontNinePar = frontNine.reduce((sum: number, hole: any) => sum + hole.par, 0);
-  const backNinePar = backNine.reduce((sum: number, hole: any) => sum + hole.par, 0);
+  const frontNineScore = frontNine.reduce((sum: number, hole: Hole) => sum + hole.score, 0);
+  const backNineScore = backNine.reduce((sum: number, hole: Hole) => sum + hole.score, 0);
+  const frontNinePar = frontNine.reduce((sum: number, hole: Hole) => sum + hole.par, 0);
+  const backNinePar = backNine.reduce((sum: number, hole: Hole) => sum + hole.par, 0);
 
   return (
     <>
@@ -137,7 +144,7 @@ export default function ScorecardPage({ params }: ScorecardPageProps) {
                 <thead>
                   <tr className="bg-gray-100 dark:bg-gray-700">
                     <th className="p-2 text-left">Hole</th>
-                    {frontNine.map((hole: any) => (
+                    {frontNine.map((hole: Hole) => (
                       <th key={hole.hole} className="p-2 text-center">{hole.hole}</th>
                     ))}
                     <th className="p-2 text-center font-bold">OUT</th>
@@ -146,14 +153,14 @@ export default function ScorecardPage({ params }: ScorecardPageProps) {
                 <tbody>
                   <tr className="border-b dark:border-gray-600">
                     <td className="p-2 font-medium">Par</td>
-                    {frontNine.map((hole: any) => (
+                    {frontNine.map((hole: Hole) => (
                       <td key={hole.hole} className="p-2 text-center">{hole.par}</td>
                     ))}
                     <td className="p-2 text-center font-bold">{frontNinePar}</td>
                   </tr>
                   <tr className="border-b dark:border-gray-600 bg-green-50 dark:bg-green-900">
                     <td className="p-2 font-medium">Team Score</td>
-                    {frontNine.map((hole: any) => (
+                    {frontNine.map((hole: Hole) => (
                       <td key={hole.hole} className={`p-2 text-center font-bold ${
                         hole.scoreToPar < 0 ? "text-red-600" : 
                         hole.scoreToPar === 0 ? "text-green-600" : 
@@ -177,7 +184,7 @@ export default function ScorecardPage({ params }: ScorecardPageProps) {
                 <thead>
                   <tr className="bg-gray-100 dark:bg-gray-700">
                     <th className="p-2 text-left">Hole</th>
-                    {backNine.map((hole: any) => (
+                    {backNine.map((hole: Hole) => (
                       <th key={hole.hole} className="p-2 text-center">{hole.hole}</th>
                     ))}
                     <th className="p-2 text-center font-bold">IN</th>
@@ -186,14 +193,14 @@ export default function ScorecardPage({ params }: ScorecardPageProps) {
                 <tbody>
                   <tr className="border-b dark:border-gray-600">
                     <td className="p-2 font-medium">Par</td>
-                    {backNine.map((hole: any) => (
+                    {backNine.map((hole: Hole) => (
                       <td key={hole.hole} className="p-2 text-center">{hole.par}</td>
                     ))}
                     <td className="p-2 text-center font-bold">{backNinePar}</td>
                   </tr>
                   <tr className="border-b dark:border-gray-600 bg-green-50 dark:bg-green-900">
                     <td className="p-2 font-medium">Team Score</td>
-                    {backNine.map((hole: any) => (
+                    {backNine.map((hole: Hole) => (
                       <td key={hole.hole} className={`p-2 text-center font-bold ${
                         hole.scoreToPar < 0 ? "text-red-600" : 
                         hole.scoreToPar === 0 ? "text-green-600" : 

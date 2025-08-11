@@ -79,7 +79,7 @@ export default function RadarChart({ data, title }: RadarChartProps) {
       },
       tooltip: {
         callbacks: {
-          label: function(context: any) {
+          label: function(context: { label: string; parsed: { r: number } }) {
             return `${context.label}: ${context.parsed.r}/100`;
           }
         }

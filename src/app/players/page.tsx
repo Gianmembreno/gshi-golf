@@ -29,7 +29,7 @@ export default function Players() {
   const [sortOrder, setSortOrder] = useState<'asc' | 'desc'>('asc');
 
   const sortedPlayers = [...players].sort((a, b) => {
-    let aValue: any, bValue: any;
+    let aValue: string | number, bValue: string | number;
     
     switch (sortBy) {
       case 'custom':
@@ -67,7 +67,10 @@ export default function Players() {
       return sortOrder === 'asc' ? aValue.localeCompare(bValue) : bValue.localeCompare(aValue);
     }
     
-    return sortOrder === 'asc' ? aValue - bValue : bValue - aValue;
+    // At this point, both values are guaranteed to be numbers
+    const aNum = aValue as number;
+    const bNum = bValue as number;
+    return sortOrder === 'asc' ? aNum - bNum : bNum - aNum;
   });
 
   const handleSort = (column: string) => {
@@ -164,7 +167,7 @@ export default function Players() {
                       {player.alias && (
                         <div>
                           <span className="bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-3 py-1 rounded-full text-sm font-medium">
-                            "{player.alias}"
+                            &ldquo;{player.alias}&rdquo;
                           </span>
                         </div>
                       )}
