@@ -42,13 +42,13 @@ export default function Home() {
 
         {/* Navigation Cards */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-6">
-          <Link href="/results" className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4 md:p-6 hover:shadow-xl transition-shadow group">
+          {/* <Link href="/results" className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4 md:p-6 hover:shadow-xl transition-shadow group">
             <div className="text-center">
               <Trophy className="w-8 h-8 md:w-12 md:h-12 mx-auto mb-2 md:mb-4 text-green-600 group-hover:text-green-700 transition-colors" />
               <h3 className="text-sm md:text-lg font-semibold mb-1 md:mb-2 text-green-800 dark:text-green-300">Results</h3>
               <p className="text-xs md:text-sm text-gray-600 dark:text-gray-400 hidden md:block">Last tournament details and complete results</p>
             </div>
-          </Link>
+          </Link> */}
 
           <Link href="/players" className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4 md:p-6 hover:shadow-xl transition-shadow group">
             <div className="text-center">

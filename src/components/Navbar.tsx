@@ -17,9 +17,9 @@ export default function Navbar() {
             <Link href="/" className="hover:text-green-300 transition-colors">
               Home
             </Link>
-            <Link href="/results" className="hover:text-green-300 transition-colors">
+            {/* <Link href="/results" className="hover:text-green-300 transition-colors">
               Results
-            </Link>
+            </Link> */}
             <Link href="/players" className="hover:text-green-300 transition-colors">
               Players
             </Link>
@@ -43,13 +43,13 @@ export default function Navbar() {
               >
                 Home
               </Link>
-              <Link 
+              {/* <Link 
                 href="/results" 
                 className="block px-3 py-2 text-base font-medium text-white hover:text-green-300 hover:bg-green-800 rounded-md transition-colors"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Results
-              </Link>
+              </Link> */}
               <Link 
                 href="/players" 
                 className="block px-3 py-2 text-base font-medium text-white hover:text-green-300 hover:bg-green-800 rounded-md transition-colors"
