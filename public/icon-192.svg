@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192" width="192" height="192">
+  <defs>
+    <radialGradient id="ballGradient192" cx="0.3" cy="0.3" r="0.7">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#e5e7eb"/>
+    </radialGradient>
+  </defs>
+  
+  <!-- Background circle for better visibility -->
+  <circle cx="96" cy="96" r="96" fill="#16a34a"/>
+  
+  <!-- Golf ball -->
+  <circle cx="96" cy="96" r="80" fill="url(#ballGradient192)" stroke="#16a34a" stroke-width="4"/>
+  
+  <!-- Golf ball dimples - scaled for larger size -->
+  <circle cx="72" cy="60" r="8" fill="#d1d5db" opacity="0.6"/>
+  <circle cx="108" cy="72" r="8" fill="#d1d5db" opacity="0.6"/>
+  <circle cx="84" cy="84" r="8" fill="#d1d5db" opacity="0.6"/>
+  <circle cx="120" cy="96" r="8" fill="#d1d5db" opacity="0.6"/>
+  <circle cx="96" cy="108" r="8" fill="#d1d5db" opacity="0.6"/>
+  <circle cx="72" cy="120" r="8" fill="#d1d5db" opacity="0.6"/>
+  <circle cx="108" cy="132" r="8" fill="#d1d5db" opacity="0.6"/>
+  <circle cx="60" cy="96" r="8" fill="#d1d5db" opacity="0.6"/>
+  <circle cx="132" cy="120" r="8" fill="#d1d5db" opacity="0.6"/>
+  
+  <!-- Additional dimples -->
+  <circle cx="90" cy="48" r="6" fill="#d1d5db" opacity="0.4"/>
+  <circle cx="126" cy="66" r="6" fill="#d1d5db" opacity="0.4"/>
+  <circle cx="66" cy="78" r="6" fill="#d1d5db" opacity="0.4"/>
+  <circle cx="102" cy="90" r="6" fill="#d1d5db" opacity="0.4"/>
+  <circle cx="78" cy="102" r="6" fill="#d1d5db" opacity="0.4"/>
+  <circle cx="114" cy="114" r="6" fill="#d1d5db" opacity="0.4"/>
+  <circle cx="90" cy="126" r="6" fill="#d1d5db" opacity="0.4"/>
+  <circle cx="54" cy="114" r="6" fill="#d1d5db" opacity="0.4"/>
+  <circle cx="138" cy="102" r="6" fill="#d1d5db" opacity="0.4"/>
+  
+  <!-- More small dimples -->
+  <circle cx="84" cy="60" r="4" fill="#d1d5db" opacity="0.3"/>
+  <circle cx="108" cy="54" r="4" fill="#d1d5db" opacity="0.3"/>
+  <circle cx="132" cy="78" r="4" fill="#d1d5db" opacity="0.3"/>
+  <circle cx="120" cy="132" r="4" fill="#d1d5db" opacity="0.3"/>
+  <circle cx="72" cy="144" r="4" fill="#d1d5db" opacity="0.3"/>
+  <circle cx="48" cy="126" r="4" fill="#d1d5db" opacity="0.3"/>
+  <circle cx="144" cy="84" r="4" fill="#d1d5db" opacity="0.3"/>
+</svg>

@@ -1,0 +1,7 @@
+<!-- This is a placeholder for favicon.ico -->
+<!-- In production, you would generate a proper ICO file from the SVG using tools like:
+  - favicon.io
+  - realfavicongenerator.net  
+  - ImageMagick: convert favicon.svg -resize 32x32 favicon.ico
+  - Node.js tools like 'to-ico' package
+-->

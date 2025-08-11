@@ -1,0 +1,8 @@
+<!-- This would be a 16x16 PNG version of the golf ball favicon -->
+<!-- In production, you would convert the SVG to proper PNG format using a tool like:
+     - Online converters (favicon.io, realfavicongenerator.net)
+     - Command line tools (ImageMagick, Sharp)
+     - Build tools (next-pwa, favicons-webpack-plugin)
+-->
+
+<!-- For now, creating a placeholder that explains the need for proper image generation -->

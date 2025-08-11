@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <radialGradient id="ballGradient512" cx="0.3" cy="0.3" r="0.7">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#e5e7eb"/>
+    </radialGradient>
+  </defs>
+  
+  <!-- Background circle for better visibility -->
+  <circle cx="256" cy="256" r="256" fill="#16a34a"/>
+  
+  <!-- Golf ball -->
+  <circle cx="256" cy="256" r="220" fill="url(#ballGradient512)" stroke="#16a34a" stroke-width="8"/>
+  
+  <!-- Golf ball dimples - scaled for larger size -->
+  <circle cx="192" cy="160" r="20" fill="#d1d5db" opacity="0.6"/>
+  <circle cx="288" cy="192" r="20" fill="#d1d5db" opacity="0.6"/>
+  <circle cx="224" cy="224" r="20" fill="#d1d5db" opacity="0.6"/>
+  <circle cx="320" cy="256" r="20" fill="#d1d5db" opacity="0.6"/>
+  <circle cx="256" cy="288" r="20" fill="#d1d5db" opacity="0.6"/>
+  <circle cx="192" cy="320" r="20" fill="#d1d5db" opacity="0.6"/>
+  <circle cx="288" cy="352" r="20" fill="#d1d5db" opacity="0.6"/>
+  <circle cx="160" cy="256" r="20" fill="#d1d5db" opacity="0.6"/>
+  <circle cx="352" cy="320" r="20" fill="#d1d5db" opacity="0.6"/>
+  
+  <!-- Medium dimples */
+  <circle cx="240" cy="128" r="16" fill="#d1d5db" opacity="0.5"/>
+  <circle cx="336" cy="176" r="16" fill="#d1d5db" opacity="0.5"/>
+  <circle cx="176" cy="208" r="16" fill="#d1d5db" opacity="0.5"/>
+  <circle cx="272" cy="240" r="16" fill="#d1d5db" opacity="0.5"/>
+  <circle cx="208" cy="272" r="16" fill="#d1d5db" opacity="0.5"/>
+  <circle cx="304" cy="304" r="16" fill="#d1d5db" opacity="0.5"/>
+  <circle cx="240" cy="336" r="16" fill="#d1d5db" opacity="0.5"/>
+  <circle cx="144" cy="304" r="16" fill="#d1d5db" opacity="0.5"/>
+  <circle cx="368" cy="272" r="16" fill="#d1d5db" opacity="0.5"/>
+  
+  <!-- Small dimples -->
+  <circle cx="224" cy="160" r="12" fill="#d1d5db" opacity="0.4"/>
+  <circle cx="288" cy="144" r="12" fill="#d1d5db" opacity="0.4"/>
+  <circle cx="352" cy="208" r="12" fill="#d1d5db" opacity="0.4"/>
+  <circle cx="320" cy="352" r="12" fill="#d1d5db" opacity="0.4"/>
+  <circle cx="192" cy="384" r="12" fill="#d1d5db" opacity="0.4"/>
+  <circle cx="128" cy="336" r="12" fill="#d1d5db" opacity="0.4"/>
+  <circle cx="384" cy="224" r="12" fill="#d1d5db" opacity="0.4"/>
+  <circle cx="160" cy="176" r="12" fill="#d1d5db" opacity="0.4"/>
+  <circle cx="336" cy="288" r="12" fill="#d1d5db" opacity="0.4"/>
+  <circle cx="176" cy="336" r="12" fill="#d1d5db" opacity="0.4"/>
+  
+  <!-- Very small dimples for detail -->
+  <circle cx="256" cy="192" r="8" fill="#d1d5db" opacity="0.3"/>
+  <circle cx="304" cy="176" r="8" fill="#d1d5db" opacity="0.3"/>
+  <circle cx="208" cy="208" r="8" fill="#d1d5db" opacity="0.3"/>
+  <circle cx="288" cy="272" r="8" fill="#d1d5db" opacity="0.3"/>
+  <circle cx="224" cy="304" r="8" fill="#d1d5db" opacity="0.3"/>
+  <circle cx="320" cy="224" r="8" fill="#d1d5db" opacity="0.3"/>
+  <circle cx="192" cy="240" r="8" fill="#d1d5db" opacity="0.3"/>
+  <circle cx="272" cy="320" r="8" fill="#d1d5db" opacity="0.3"/>
+  <circle cx="368" cy="304" r="8" fill="#d1d5db" opacity="0.3"/>
+  <circle cx="144" cy="272" r="8" fill="#d1d5db" opacity="0.3"/>
+</svg>
