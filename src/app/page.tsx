@@ -6,12 +6,15 @@ export default function Home() {
 
   return (
     <>
-      <header className="bg-green-800 text-white shadow-lg">
-        <div className="container mx-auto px-4 py-6 md:py-8 text-center">
-          <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold mb-2">Gente Seria y Honesta Invitational</h1>
-          <p className="text-lg md:text-xl opacity-90">Golf Tournament</p>
-          <p className="text-lg md:text-xl opacity-90">Club Capestre</p>
-          <p className="text-lg md:text-xl opacity-90">La Lima, Honduras</p>
+      <header className="bg-green-800 text-white">
+        <div className="container mx-auto px-4 py-16 md:py-24 text-center">
+          <Trophy className="w-16 h-16 mx-auto mb-6 text-yellow-400" />
+          <h1 className="text-4xl md:text-6xl font-extrabold tracking-tighter mb-4">
+            Gente Seria y Honesta Invitational
+          </h1>
+          <p className="text-xl md:text-2xl font-light text-green-200">
+            Club Campestre • La Lima, Honduras
+          </p>
         </div>
       </header>
 
