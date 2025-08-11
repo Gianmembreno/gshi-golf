@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, Footprints, Venus } from "lucide-react";
 import { notFound } from "next/navigation";
 import { getPlayerById, players, lastTournament, getResultByTeamId, teams } from "@/data";
 import RadarChart from "@/components/RadarChart";
@@ -26,6 +26,18 @@ export default function PlayerProfile({ params }: { params: Promise<{ id: string
 
   // Use radar chart stats from player data
   const radarStats = player.radarStats;
+
+  // Function to get skill icon
+  const getSkillIcon = (skill: string) => {
+    switch (skill.toLowerCase()) {
+      case 'footwedge master':
+        return <Footprints className="w-5 h-5" />;
+      case 'pussy putter':
+        return <Venus className="w-5 h-5" />;
+      default:
+        return <span className="text-base">⚡</span>;
+    }
+  };
 
   return (
     <>
@@ -96,6 +108,30 @@ export default function PlayerProfile({ params }: { params: Promise<{ id: string
               )}
             </div>
           </div>
+
+          {/* Skills Section */}
+          {player.skills && player.skills.length > 0 && (
+            <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4 sm:p-6 md:p-8">
+              <h2 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 text-green-800 dark:text-green-300">
+                Skills
+              </h2>
+              <div className="space-y-3 sm:space-y-4">
+                {player.skills.map((skill, index) => (
+                  <div 
+                    key={index}
+                    className="flex items-center gap-3 p-3 bg-purple-50 dark:bg-purple-900/20 rounded-lg border border-purple-200 dark:border-purple-800"
+                  >
+                    <div className="text-purple-600 dark:text-purple-400">
+                      {getSkillIcon(skill)}
+                    </div>
+                    <span className="text-purple-700 dark:text-purple-300 font-medium">
+                      {skill}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
 
         </div>
       </main>

@@ -11,6 +11,7 @@ export interface Player {
   wins: number;
   bestScore?: number;
   superlatives?: string[];
+  skills?: string[];
   radarStats: {
     driving: number;
     irons: number;
@@ -33,6 +34,7 @@ export const players: Player[] = [
     totalTournaments: 1,
     wins: 1,
     bestScore: -6,
+    skills: ["Footwedge Master", "Pussy Putter"],
     radarStats: {
       driving: 30,
       irons: 70,
@@ -53,6 +55,7 @@ export const players: Player[] = [
     totalTournaments: 1,
     wins: 1,
     bestScore: -4,
+    skills: ["Footwedge Master", "Pussy Putter"],
     radarStats: {
       driving: 0,
       irons: 0,
@@ -73,6 +76,7 @@ export const players: Player[] = [
     totalTournaments: 1,
     wins: 0,
     bestScore: -4,
+    skills: ["Footwedge Master", "Pussy Putter"],
     radarStats: {
       driving: 0,
       irons: 0,
@@ -93,6 +97,7 @@ export const players: Player[] = [
     totalTournaments: 1,
     wins: 0,
     bestScore: -3,
+    skills: ["Footwedge Master", "Pussy Putter"],
     radarStats: {
       driving: 0,
       irons: 0,
@@ -113,6 +118,7 @@ export const players: Player[] = [
     totalTournaments: 1,
     wins: 0,
     bestScore: 1,
+    skills: ["Footwedge Master", "Pussy Putter"],
     radarStats: {
       driving: 0,
       irons: 0,
@@ -134,6 +140,7 @@ export const players: Player[] = [
     wins: 0,
     bestScore: 0,
     superlatives: ["Most beers drank in tournament: 11 beers"],
+    skills: ["Footwedge Master", "Pussy Putter"],
     radarStats: {
       driving: 0,
       irons: 0,
@@ -154,6 +161,7 @@ export const players: Player[] = [
     totalTournaments: 1,
     wins: 0,
     bestScore: 0,
+    skills: ["Footwedge Master", "Pussy Putter"],
     radarStats: {
       driving: 0,
       irons: 0,
@@ -174,6 +182,7 @@ export const players: Player[] = [
     totalTournaments: 1,
     wins: 0,
     bestScore: -1,
+    skills: ["Footwedge Master", "Pussy Putter"],
     radarStats: {
       driving: 0,
       irons: 0,
